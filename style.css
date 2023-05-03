@@ -118,7 +118,13 @@ h1, h2, h3, h4, p, ul, figure {
   color: var(--very-dark-grayish-blue);
 }
 
+.faq-img {
+  transform: rotate(180deg);
+}
+
 .answer {
+  display: none;
+  /* visibility: hidden; */
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--dark-grayish-blue);
