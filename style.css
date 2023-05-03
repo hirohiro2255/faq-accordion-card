@@ -48,6 +48,8 @@ h1, h2, h3, h4, p, ul, figure {
   padding-bottom: 48px;
 }
 
+
+
 .img-container {
   display: flex;
   flex-direction: column;
@@ -80,15 +82,6 @@ h1, h2, h3, h4, p, ul, figure {
   margin-top: -72px;
 }
 
-.shadow-main-img {
-  /* width: 240px;
-  height: 145px; */
-  /* margin-top: -80px; */
-}
-
-.card {
-  /* padding-top: 28px; */
-}
 
 .card-title {
   font-size: 2rem;
@@ -131,4 +124,68 @@ h1, h2, h3, h4, p, ul, figure {
   color: var(--dark-grayish-blue);
   line-height: 1.5;
   margin-bottom: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: block;
+    margin-top: 129px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 130px;
+  }
+  .card-container {
+    display: flex;
+    padding: 0;
+  }
+  .img-container {
+    width: 45%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-position-x: right;
+    background-position-y: -288px;
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  .box-for-desktop {
+    background-image: url(images/illustration-box-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 90px;
+    height: 106px;
+    zoom: 1.5;
+    top: 60%;
+    left: 10%;
+  }
+  .main-img {
+    position: absolute;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    width: 472px;
+    height: 359px;
+    left: -60px;
+    top: 105px;
+  }
+
+  .shadow-main-img {
+    background-image: none;
+    width: 0px;
+    height: 0px;
+    margin-top: 0px;
+  }
+  .card {
+    width: 55%;
+    padding-top: 65px;
+    padding-bottom: 83px;
+    padding-left: calc((80 / 920) * 100%);
+    padding-right: calc((80 / 920) * 100%);
+  }
+
+  .faq-list {
+    width: 100%;
+    max-width: 350px;
+  }
+
 }
