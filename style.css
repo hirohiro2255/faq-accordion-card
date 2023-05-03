@@ -6,5 +6,129 @@
   --very-dark-grayish-blue: hsl(237, 12%, 33%);
   --dark-grayish-blue: hsl(240, 6%, 50%);
   --light-grayish-blue: hsl(240, 5%, 91%);
+}
 
+* {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, p, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* .main-img {
+  width: 237px;
+  height: 180px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 162px;
+  margin-right: calc((24 / 375) * 100%);
+  margin-left: calc((24 / 375) * 100%);
+  margin-bottom: 85px;
+  width: 87.2%;
+  max-width: 920px;
+}
+
+.card-container {
+  background-color: #fff;
+  border-radius: 23px;
+  box-shadow: 0px 50px 50px -20px hsla(261, 75%, 27%, 0.5);
+  padding-top: 40px;
+  padding-right: calc((24 / 327) * 100%);
+  padding-left: calc((24 / 327) * 100%);
+  padding-bottom: 48px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+  distance between top and img === 40px;
+  distance between top and card-container === 148px;
+  148px - 40px === 108px;
+  padding-top on card-container === 40px;
+  108 + 40px === 148px;
+   */
+  margin-top: -148px;
+}
+.main-img {
+  background-image: url(images/illustration-woman-online-mobile.svg);
+  width: 237px;
+  height: 180px;
+}
+
+.shadow-main-img {
+  background-image: url(images/bg-pattern-mobile.svg);
+  width: 240px;
+  height: 145px;
+  background-repeat: no-repeat;
+  /*
+  distance between main-img-bottom-line and shadow-img-bottom-line === 32px;
+  padding-top on card-container === 40px;
+  32 + 40 === 72px;
+   */
+  margin-top: -72px;
+}
+
+.shadow-main-img {
+  /* width: 240px;
+  height: 145px; */
+  /* margin-top: -80px; */
+}
+
+.card {
+  /* padding-top: 28px; */
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.24;
+  text-align: center;
+  color: var(--very-dark-desaturated-blue);
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  list-style: none;
+}
+
+.faq-group {
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.faq-group:not(:first-child) {
+  margin-top: 17px;
+}
+
+.faq-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.faq {
+  font-size: clamp(0.8125rem, 0.7905rem + 0.0939vw, 0.875rem);
+  line-height: 1.24;
+  font-weight: 400;
+  color: var(--very-dark-grayish-blue);
+}
+
+.answer {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
